@@ -1,0 +1,7 @@
+django notes : 
+
+Model relationships
+
+1. Parent table (Language), Child table (Framework) [The parent can have multiple childs but the clid can have only one parent] [put foreign key on child table]
+	Single programming language can have multiple frameworks but framework is written in one language. 
+	Python programmin language has multiple frameworks like unittest, django, flask etc. But django framework is written in only one language that is python.
