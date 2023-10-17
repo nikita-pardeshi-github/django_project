@@ -1,7 +1,21 @@
 django notes : 
 
-Model relationships
+Model relationships :
 
 1. Parent table (Language), Child table (Framework) [The parent can have multiple childs but the clid can have only one parent] [put foreign key on child table]
 	Single programming language can have multiple frameworks but framework is written in one language. 
 	Python programmin language has multiple frameworks like unittest, django, flask etc. But django framework is written in only one language that is python.
+
+2. Many to many (Movies can have multiple characters and a character can be part of many movies)
+
+
+Migrate command usage : 
+
+	The migrate command looks at the INSTALLED_APPS setting and creates any necessary database tables according to the database settings in your mysite/settings.py file and the database migrations shipped with the app (we’ll cover those later).
+
+sqlite commands :
+
+	1. .headers ON : to see all column names with data in tables
+	2. .tables : displays all tables in a database
+	3. .schema
+	4. .mode column, .mode box, .mode table: Run 4 and 1 one after the other to see proper table structure in sqlite command line
